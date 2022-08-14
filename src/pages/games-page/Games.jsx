@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Banner from "../../components/Banner/Banner";
 import GameList from "../../components/GameList/GameList";
 import Navbar from "../../components/Navbar/Navbar";
