@@ -1,0 +1,84 @@
+/* 
+
+:root {
+  /* !light Mode */
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --transition: 0.5s;
+
+  --ff-primary: 
+  --ff-secondary:;
+
+  --fs-100: 0.625rem; /*10px*/
+  --fs-200: 0.75rem; /*12px*/
+  --fs-300: 0.875rem; /*14px*/
+  --fs-400: 1rem; /*16px*/
+  --fs-500: 1.25rem; /*20px*/
+  --fs-600: 1.5rem; /*24px*/
+  --fs-700: 1.875rem; /*30px*/
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  --fs-nav: var(--fs-200);
+  --fs-button: var(--fs-300);
+
+  --fs-primary-heading-200: var(--fs-200); /*12px*/
+  --fs-primary-heading-400: var(--fs-400); /*16px*/
+  --fs-primary-heading-500: var(--fs-500); /*20px*/
+  --fs-primary-heading-600: var(--fs-600); /*24px*/
+  --fs-primary-heading-700: var(--fs-700); /*30px*/
+
+  --fs-secondary-heading-100: var(--fs-100); /*10px*/
+  --fs-secondary-heading-300: var(--fs-300); /*14px*/
+
+  /* spacing */
+  --size-100: 1.875rem;
+  --size-200: 2.5rem;
+}
+
+/*? Utility classes */
+/* .fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-extra-bold {
+  font-weight: var(--fw-extra-bold);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+/* !dark Mode */
+.darkMode {
+  --background-color:;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: var(--transition);
+
+  font-family: var(--ff-primary); */
+} */
