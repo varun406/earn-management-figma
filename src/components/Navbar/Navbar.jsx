@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import {
   Container,
   Wrapper,
@@ -6,9 +7,12 @@ import {
   ButtonGroup,
   LogInButton,
   SignUpButton,
+  ThemeToggle,
 } from "./Navbar.styles";
 
 function Navbar() {
+  const { themeContent, setThemeContent } = useContext(ThemeContext);
+
   return (
     <Container>
       <Wrapper>
@@ -21,8 +25,19 @@ function Navbar() {
           <img src="/assets/svg/search.svg" alt="search_icon" />
         </Nav>
         <ButtonGroup>
-          <LogInButton>Log In</LogInButton>
-          <SignUpButton>Sign Up</SignUpButton>
+          <>
+            <LogInButton>Log In</LogInButton>
+            <SignUpButton>Sign Up</SignUpButton>
+          </>
+          <ThemeToggle>
+            <button
+            // onClick={setThemeContent(
+            //   themeContent === "light" ? "dark" : "light"
+            // )}
+            >
+              Light
+            </button>
+          </ThemeToggle>
         </ButtonGroup>
       </Wrapper>
     </Container>

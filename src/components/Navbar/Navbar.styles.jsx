@@ -62,3 +62,13 @@ export const LogInButton = styled(SignUpButton)`
   padding: 0;
   background: transparent;
 `;
+
+export const ThemeToggle = styled.div`
+  width: 100px;
+  height: 50px;
+
+  button {
+    color: ${(props) => props.theme.textColor};
+    background-color: ${(props) => props.theme.backgroundColor};
+  }
+`;

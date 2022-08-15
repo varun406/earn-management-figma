@@ -6,7 +6,7 @@ import GlobalStyles from "../../styles/GlobalStyles";
 import { data } from "../../gameListData.js";
 import { Container, Wrapper } from "./Games.styles";
 
-function Games() {
+const Games = () => {
   return (
     <Container>
       <GlobalStyles />
@@ -25,6 +25,6 @@ function Games() {
       </Wrapper>
     </Container>
   );
-}
+};
 
 export default Games;
