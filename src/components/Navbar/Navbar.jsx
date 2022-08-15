@@ -11,7 +11,7 @@ import {
 } from "./Navbar.styles";
 
 function Navbar() {
-  const { themeContent, setThemeContent } = useContext(ThemeContext);
+  const { handleToggle } = useContext(ThemeContext);
 
   return (
     <Container>
@@ -30,13 +30,7 @@ function Navbar() {
             <SignUpButton>Sign Up</SignUpButton>
           </>
           <ThemeToggle>
-            <button
-            // onClick={setThemeContent(
-            //   themeContent === "light" ? "dark" : "light"
-            // )}
-            >
-              Light
-            </button>
+            <button onClick={() => handleToggle()}>Light</button>
           </ThemeToggle>
         </ButtonGroup>
       </Wrapper>

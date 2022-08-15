@@ -1,8 +1,6 @@
-import { ThemeProvider } from "styled-components";
-
 export const DefaultTheme = {
   fontFamily: {
-    primary: ["Outfit, sans-serif"],
+    primary: "Outfit, sans-serif",
     secondary: [" Nunito, sans-serif"],
   },
   fontSizes: {
@@ -14,6 +12,7 @@ export const DefaultTheme = {
     fs600: "1.5rem", // 24px
     fs700: "1.875rem", // 30px
   },
+  fontweight: ["700", "800"], // ! Error in obejct
   fontWeight: {
     regular: "400",
     medium: "500",
@@ -24,17 +23,15 @@ export const DefaultTheme = {
 };
 
 export const lightTheme = {
-  backgroundColor: "#fff",
+  id: "light",
+  headingBgColor: "#fff",
+  backgroundColor: "#E5E5E5",
   textColor: "#000",
 };
 
 export const darkTheme = {
+  id: "dark",
+  headingBgColor: "#353535",
   backgroundColor: "#131517",
   textColor: "#fff",
 };
-
-const Theme = ({ children }) => {
-  <ThemeProvider theme={DefaultTheme}>{children}</ThemeProvider>;
-};
-
-export default Theme;

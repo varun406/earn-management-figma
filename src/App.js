@@ -7,30 +7,31 @@ import GlobalStyles from "./styles/GlobalStyles";
 import { darkTheme, DefaultTheme, lightTheme } from "./styles/theme";
 
 const App = () => {
-  const [themeContent, setThemeContent] = useState("dark");
-
-  const [theme, setNewTheme] = useState({
-    ...DefaultTheme,
-    ...lightTheme,
-  });
-
-  useEffect(() => {
-    if (themeContent === "light") {
-      setNewTheme({
-        ...DefaultTheme,
-        ...lightTheme,
-      });
-    } else {
+  const [theme, setNewTheme] = useState({ DefaultTheme });
+  const handleToggle = () => {
+    if (theme.id === "light") {
       setNewTheme({
         ...DefaultTheme,
         ...darkTheme,
       });
+    } else {
+      setNewTheme({
+        ...DefaultTheme,
+        ...lightTheme,
+      });
     }
-  }, [themeContent]);
+  };
+
+  useEffect(() => {
+    setNewTheme({
+      ...DefaultTheme,
+      ...lightTheme,
+    });
+  }, []);
 
   return (
     <>
-      <ThemeContext.Provider value={{ themeContent, setThemeContent }}>
+      <ThemeContext.Provider value={{ handleToggle }}>
         <ThemeProvider theme={theme}>
           <GlobalStyles />
           <Games />

@@ -9,8 +9,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     transition: all 0.35s;
-    font-family: "Outfit", sans-serif;
-    background: #111111;
+    ${"" /* font-family: ${(props) => props.theme.fontFamily.secondary[0]}; */}
+    background: ${(props) => props.theme.backgroundColor};
   }
 `;
 

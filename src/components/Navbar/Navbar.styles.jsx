@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
   width: 100%;
   height: 109px;
-  background: #353535;
+  background: ${(props) => props.theme.headingBgColor};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: ${(props) => props.theme.textColor};
 
   img {
     width: 74px;
@@ -29,8 +30,8 @@ export const Nav = styled.nav`
 
   a {
     text-decoration: none;
-    color: #fff;
     font-weight: 400;
+    color: ${(props) => props.theme.textColor};
   }
 
   img {
@@ -47,7 +48,7 @@ export const ButtonGroup = styled.div`
 `;
 
 export const SignUpButton = styled.button`
-  font-weight: 600;
+  font-weight: ${(props) => props.theme.fontweight}; //! Error
   font-size: 14px;
   padding: 16px 30px;
   background: linear-gradient(270deg, #2286dc 0%, #4db3dc 100%);
@@ -55,10 +56,11 @@ export const SignUpButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  color: ${(props) => props.theme.backgroundColor};
 `;
 
 export const LogInButton = styled(SignUpButton)`
-  color: #fff;
+  color: ${(props) => props.theme.textColor};
   padding: 0;
   background: transparent;
 `;
@@ -70,5 +72,6 @@ export const ThemeToggle = styled.div`
   button {
     color: ${(props) => props.theme.textColor};
     background-color: ${(props) => props.theme.backgroundColor};
+    cursor: pointer;
   }
 `;
